@@ -81,6 +81,7 @@ body{
   color: lightyellow;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30pt;
+  background-color: teal;
 }
 
 #bird{
@@ -149,4 +150,22 @@ body{
   width: 5%;
   position: absolute;
   margin-bottom: 50px;
+}
+
+#scoreBox{
+  margin-left: 1000px;
+  margin-right: 80px;
+  position: absolute;
+  margin-top: -50px;
+}
+
+#scoreBox > img{
+  width: 20%;
+}
+
+#scoreBox > p{
+  background-color: wheat;
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
 }
