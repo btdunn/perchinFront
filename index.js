@@ -2,6 +2,7 @@ const baseURL = 'http://localhost:3000/birds'
 
 const $nav = document.getElementById('nav')
 const $blurbZone = document.getElementById('blurbZone')
+const $marquee = document.getElementById('marquee')
 
 fetch(baseURL)
   .then(response => response.json())
@@ -17,7 +18,6 @@ function showBirds(bird){
   $li.id = 'navClick'
   $img.src = bird.url
   $img.id = bird.id
-  // $img.alt = bird.blurb
   $img.width = 100
   $li.append($img)
   $nav.appendChild($li)
@@ -54,13 +54,12 @@ function dragHandler(){
 }
 
 function dragStart(){
-  console.log('start')
   event.dataTransfer.setData('text', event.target.src)
   showInfo(event.target.id)
 }
 
 function dragEnd(){
-  console.log('end')
+
 }
 
 function dragOver(event){
@@ -76,14 +75,22 @@ function dragDrop(){
   let source = event.dataTransfer.getData('text')
   $reveal.src = source
   this.append($reveal)
+  counter++
+  gameEnd()
+}
+
+function gameEnd(){
+  if (counter === 5){
+    $marquee.textContent = 'BIRDS CHOSEN. ENJOY YOUR BIRDS.'
+    $nav.remove()
+    setTimeout(() => {$blurbZone.remove()}, 1500)
+  }
 }
 
 function showInfo(id){
   const $target = document.getElementById(id)
   $target.parentElement.id = 'show'
   setTimeout(() => {$target.parentElement.id = 'invisible'}, 3000) 
-
 }
 
-
-
+let counter = 0
