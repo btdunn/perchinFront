@@ -81,6 +81,7 @@ body{
   color: lightyellow;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30pt;
+  background-color: teal;
 }
 
 #bird{
@@ -96,7 +97,7 @@ body{
   grid-column-gap: 5px;
   z-index: 3;
   margin: 100px 100px 100px 200px;
-  position: relative;
+  position: absolute;
   height: 100px;
   border: 3px solid purple;
   width: 800px;
@@ -135,5 +136,36 @@ body{
 #blurbZone{
   display: grid;
   margin: 20px 50px 20px 50px;
+}
 
+#refresh{
+  position: absolute;
+  margin-left: 1140px;
+  margin-top: 50px;
+  background-color: wheat;
+  color: teal;
+}
+
+#gif{
+  width: 5%;
+  position: absolute;
+  margin-bottom: 50px;
+}
+
+#scoreBox{
+  margin-left: 1000px;
+  margin-right: 80px;
+  position: absolute;
+  margin-top: -50px;
+}
+
+#scoreBox > img{
+  width: 20%;
+}
+
+#scoreBox > p{
+  background-color: wheat;
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
 }
