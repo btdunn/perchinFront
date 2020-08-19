@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end meyers */
+
+
+body{
+  background:url(https://i.ytimg.com/vi/6HgDbrFvyDw/maxresdefault.jpg);
+}
+
+#title{
+  display: grid;
+  align-self: center;
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36pt;
+  margin-left: 70px;
+  margin-right: 880px;
+  background-color: teal;
+}
+
+#positionContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1px;
+  list-style: none;
+  padding-top: 80px;
+}
+
+#branch {
+  z-index: 2;
+  height: 10%;
+  width: 100%;
+  margin-top: 330px;
+  position: absolute;
+  background:url(http://www.textures4photoshop.com/tex/thumbs/rainbow-gradient-2391.jpg)top center;
+}
+
+#branch > marquee {
+  color: lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30pt;
+}
+
+#bird{
+  display:grid;
+  width: 80%;
+  position: relative;
+  height: 200px;
+}
+
+#nav{
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-column-gap: 5px;
+  z-index: 3;
+  margin: 100px 100px 100px 200px;
+  position: relative;
+  height: 100px;
+  border: 3px solid purple;
+  width: 800px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background-color: rebeccapurple;
+}
+
+#empty{
+  border: 2px solid wheat;
+  height: 300px;
+  width: 250px;
+  overflow: hidden;
+  background-color:hsla(119, 83%, 19%, 0.753); 
+}
+
+#invisible{
+  display: none;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  margin-left: 100px;
+}
+
+#show{
+  display: grid;
+  position: absolute;
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  margin-left: 100px;
+  background-color: teal;
+  margin-right: 800px;
+}
+
+#blurbZone{
+  display: grid;
+  margin: 20px 50px 20px 50px;
+
+}
