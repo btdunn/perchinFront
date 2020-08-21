@@ -45,6 +45,12 @@ function birdInfo(bird){
   $blurbZone.append($infoContainer)
 }
 
+function showInfo(birdId){
+  const $target = document.querySelector(`h2[data-bird-id="${birdId}"]`)
+  $target.parentElement.className = 'show'
+  setTimeout(() => {$target.parentElement.className = 'invisible'}, 3000) 
+}
+
 function dragHandler(){
   document.querySelectorAll('.navClick').forEach(birdCard => {
     birdCard.addEventListener('dragstart', dragStart)
@@ -63,12 +69,10 @@ function dragHandler(){
 function dragStart(event){
   event.dataTransfer.setData('text', event.target.src)
   showInfo(event.target.dataset.birdId)
-  score.push(event.target.id)
+  score.push(event.target.dataset.birdId)
 }
 
-function dragEnd(){
-
-}
+function dragEnd(){}
 
 function dragOver(event){
   event.preventDefault()
@@ -94,12 +98,6 @@ function gameEnd(){
     setTimeout(() => {$blurbZone.remove()}, 1500)
     scoreCalculator(score)
   }
-}
-
-function showInfo(birdId){
-  const $target = document.querySelector(`h2[data-bird-id="${birdId}"]`)
-  $target.parentElement.className = 'show'
-  setTimeout(() => {$target.parentElement.className = 'invisible'}, 3000) 
 }
 
 function scoreCalculator(score){

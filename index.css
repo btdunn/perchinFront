@@ -146,7 +146,7 @@ table {
   font-size: 18pt;
   margin-left: 100px;
   margin-right: 800px;
-  background-color: teal;
+  background-color:hsla(119, 83%, 19%, 0.753); 
 }
 
 .blurbZone{
@@ -189,5 +189,5 @@ table {
 
 .dark{
   background: url(https://i.imgur.com/MkNYYVF.jpg);
-  color: whitesmoke
+  color: whitesmoke;
 }
