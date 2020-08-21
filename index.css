@@ -45,22 +45,38 @@ table {
 /* end meyers */
 
 
-body{
-  background:url(https://i.ytimg.com/vi/6HgDbrFvyDw/maxresdefault.jpg);
+.light{
+  background:url(https://i.imgur.com/wu3tj6v.jpg);
 }
 
-#title{
+.daySwitch{
+  position: absolute;
+  margin-left: 1250px;
+  background-color: wheat;
+  color: teal;
+  font-family: 'Concert One', cursive;
+}
+
+.nightSwitch{
+  position: absolute;
+  margin-left: 1290px;
+  background-color: wheat;
+  color: teal;
+  font-family: 'Concert One', cursive;
+}
+
+.title{
   display: grid;
   align-self: center;
   color: wheat;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Concert One', cursive;
   font-size: 36pt;
   margin-left: 70px;
-  margin-right: 880px;
+  margin-right: 980px;
   background-color: teal;
 }
 
-#positionContainer{
+.positionContainer{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 1px;
@@ -68,7 +84,7 @@ body{
   padding-top: 80px;
 }
 
-#branch {
+.branch {
   z-index: 2;
   height: 10%;
   width: 100%;
@@ -77,21 +93,21 @@ body{
   background:url(http://www.textures4photoshop.com/tex/thumbs/rainbow-gradient-2391.jpg)top center;
 }
 
-#branch > marquee {
+.branch > marquee {
   color: lightyellow;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Concert One', cursive;
   font-size: 30pt;
   background-color: teal;
 }
 
-#bird{
+.bird{
   display:grid;
   width: 80%;
   position: relative;
   height: 200px;
 }
 
-#nav{
+.nav{
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-column-gap: 5px;
@@ -99,14 +115,14 @@ body{
   margin: 100px 100px 100px 200px;
   position: absolute;
   height: 100px;
-  border: 3px solid purple;
+  border: 3px solid wheat;
   width: 800px;
   overflow-y: hidden;
   overflow-x: scroll;
-  background-color: rebeccapurple;
+  background:url(http://www.textures4photoshop.com/tex/thumbs/rainbow-gradient-2391.jpg)top center;
 }
 
-#empty{
+.empty{
   border: 2px solid wheat;
   height: 300px;
   width: 250px;
@@ -114,58 +130,64 @@ body{
   background-color:hsla(119, 83%, 19%, 0.753); 
 }
 
-#invisible{
+.invisible{
   display: none;
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Concert One', cursive;
   font-size: 18pt;
   margin-left: 100px;
 }
 
-#show{
+.show{
   display: grid;
   position: absolute;
   color: wheat;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Concert One', cursive;
   font-size: 18pt;
   margin-left: 100px;
-  background-color: teal;
   margin-right: 800px;
+  background-color:hsla(119, 83%, 19%, 0.753); 
 }
 
-#blurbZone{
+.blurbZone{
   display: grid;
   margin: 20px 50px 20px 50px;
 }
 
-#refresh{
+.refresh{
   position: absolute;
-  margin-left: 1140px;
+  margin-left: 1265px;
   margin-top: 50px;
   background-color: wheat;
   color: teal;
+  font-family: 'Concert One', cursive;
 }
 
-#gif{
+.gif{
   width: 5%;
   position: absolute;
   margin-bottom: 50px;
 }
 
-#scoreBox{
-  margin-left: 1000px;
-  margin-right: 80px;
+.scoreBox{
+  margin-left: 950px;
+  margin-right: 100px;
   position: absolute;
   margin-top: -50px;
 }
 
-#scoreBox > img{
+.scoreBox > img{
   width: 20%;
 }
 
-#scoreBox > p{
+.scoreBox > p{
   background-color: wheat;
   color: teal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Concert One', cursive;
   font-size: 14pt;
+}
+
+.dark{
+  background: url(https://i.imgur.com/MkNYYVF.jpg);
+  color: whitesmoke;
 }
